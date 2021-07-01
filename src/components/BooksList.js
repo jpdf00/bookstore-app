@@ -1,4 +1,5 @@
 import React from 'react';
+import Book from './Book';
 
 const BooksList = () => (
   <table>
@@ -7,9 +8,7 @@ const BooksList = () => (
       <th>Title</th>
       <th>Category</th>
     </tr>
-    <tr>
-      <Book />
-    </tr>
+    <Book book={state.book} />
   </table>
 );
 
