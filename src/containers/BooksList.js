@@ -1,5 +1,11 @@
 import React from 'react';
-import Book from './Book';
+import Book from '../components/Book';
+
+const TEST = {
+  id: 1,
+  title: 'Harry Potter',
+  category: 'Action',
+};
 
 const BooksList = () => (
   <table>
@@ -8,7 +14,7 @@ const BooksList = () => (
       <th>Title</th>
       <th>Category</th>
     </tr>
-    <Book book={state.book} />
+    <Book book={TEST} />
   </table>
 );
 
