@@ -1,21 +1,26 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import Book from '../components/Book';
 
-const TEST = {
-  id: 1,
-  title: 'Harry Potter',
-  category: 'Action',
-};
+const BooksList = () => {
+  const books = useSelector((state) => state.bookReducer);
 
-const BooksList = () => (
-  <table>
-    <tr>
-      <th>ID</th>
-      <th>Title</th>
-      <th>Category</th>
-    </tr>
-    <Book book={TEST} />
-  </table>
-);
+  return (
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Title</th>
+          <th>Category</th>
+        </tr>
+      </thead>
+      <tbody>
+        {books.map((book) => (
+          <Book key={book.id} book={book} />
+        ))}
+      </tbody>
+    </table>
+  );
+};
 
 export default BooksList;
