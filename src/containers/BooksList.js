@@ -3,7 +3,8 @@ import { useSelector } from 'react-redux';
 import Book from '../components/Book';
 
 const BooksList = () => {
-  const books = useSelector((state) => state.bookReducer);
+  const books = useSelector((state) => state.books);
+  console.log(books);
 
   return (
     <table>

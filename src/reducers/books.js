@@ -1,7 +1,6 @@
 import { CREATE_BOOK, REMOVE_BOOK } from '../actions/index';
-import BOOKS from '../states/index';
 
-const bookReducer = (state = BOOKS, action) => {
+const bookReducer = (state = [], action) => {
   let newState = [...state];
   let index = 0;
   switch (action.type) {
