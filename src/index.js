@@ -1,11 +1,37 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import { v4 as uuidv4 } from 'uuid';
 import './index.css';
-import App from './App';
+import App from './components/App';
+import rootReducer from './reducers/index';
+
+const BOOKS = [
+  {
+    id: uuidv4(),
+    title: 'Book Test 1',
+    category: 'Action',
+  },
+  {
+    id: uuidv4(),
+    title: 'Book Test 2',
+    category: 'Horror',
+  },
+  {
+    id: uuidv4(),
+    title: 'Book Test 3',
+    category: 'Sci-Fi',
+  },
+];
+
+const store = createStore(rootReducer, { books: BOOKS });
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root'),
 );
