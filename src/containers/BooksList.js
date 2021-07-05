@@ -2,6 +2,7 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { removeBook } from '../actions/index';
 import Book from '../components/Book';
+import { CategoryFilter } from '../components/CategoryFilter';
 
 const BooksList = () => {
   const books = useSelector((state) => state.books);
@@ -12,21 +13,24 @@ const BooksList = () => {
   };
 
   return (
-    <table>
-      <thead>
-        <tr>
-          <th>ID</th>
-          <th>Title</th>
-          <th>Category</th>
-          <th>Remove Book</th>
-        </tr>
-      </thead>
-      <tbody>
-        {books.map((book) => (
-          <Book key={book.id} book={book} handleRemoveBook={handleRemoveBook} />
-        ))}
-      </tbody>
-    </table>
+    <>
+      <CategoryFilter />
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Category</th>
+            <th>Remove Book</th>
+          </tr>
+        </thead>
+        <tbody>
+          {books.map((book) => (
+            <Book key={book.id} book={book} handleRemoveBook={handleRemoveBook} />
+          ))}
+        </tbody>
+      </table>
+    </>
   );
 };
 
