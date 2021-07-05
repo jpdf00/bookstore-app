@@ -19,7 +19,9 @@ const CategoryFilter = (props) => {
   );
 };
 
-CategoryFilter.propTypes = { filter: PropTypes.string.isRequired };
-CategoryFilter.propTypes = { handleFilterChange: PropTypes.func.isRequired };
+CategoryFilter.propTypes = {
+  filter: PropTypes.string.isRequired,
+  handleFilterChange: PropTypes.func.isRequired,
+};
 
 export { CATEGORIES, CategoryFilter };
