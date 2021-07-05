@@ -27,7 +27,7 @@ const BOOKS = [
 
 const initialState = {
   books: BOOKS,
-  filter: 'ALL',
+  filter: 'All',
 };
 
 const store = createStore(rootReducer, initialState);

@@ -6,7 +6,7 @@ import { CATEGORIES } from '../components/CategoryFilter';
 
 const BooksForm = () => {
   const [title, setTitle] = useState('');
-  const [category, setCategory] = useState('');
+  const [category, setCategory] = useState('Action');
   const dispatch = useDispatch();
 
   const handleChangeTitle = (e) => {
