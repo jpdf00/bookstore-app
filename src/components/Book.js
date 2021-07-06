@@ -14,7 +14,9 @@ const Book = (props) => {
   );
 };
 
-Book.propTypes = { book: PropTypes.instanceOf(Object).isRequired };
-Book.propTypes = { handleRemoveBook: PropTypes.func.isRequired };
+Book.propTypes = {
+  book: PropTypes.instanceOf(Object).isRequired,
+  handleRemoveBook: PropTypes.func.isRequired,
+};
 
 export default Book;

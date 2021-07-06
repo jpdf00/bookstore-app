@@ -25,7 +25,12 @@ const BOOKS = [
   },
 ];
 
-const store = createStore(rootReducer, { books: BOOKS });
+const initialState = {
+  books: BOOKS,
+  filter: 'All',
+};
+
+const store = createStore(rootReducer, initialState);
 
 ReactDOM.render(
   <React.StrictMode>
