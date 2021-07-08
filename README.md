@@ -18,7 +18,7 @@ and to remove a book from the app via the Remove button on the Book.
 
 ## Live Demo
 
-[Bookstore (Coming Soon!)](https://bookstore-app-jpdf.herokuapp.com/)
+[Bookstore](https://bookstore-app-jpdf.herokuapp.com/)
 
 
 ## Getting Started
