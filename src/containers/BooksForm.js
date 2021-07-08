@@ -33,12 +33,12 @@ const BooksForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div className="line" />
+    <form onSubmit={handleSubmit} className="formContainer">
+      <div className="lineHorizontal" />
       <h2 className="formTitle">
         ADD NEW BOOK
       </h2>
-      <input type="text" name="title" value={title} className="inputPanel" onChange={handleChangeTitle} />
+      <input type="text" name="title" value={title} className="inputPanel" onChange={handleChangeTitle} placeholder="BOOK TITLE" />
       <select name="category" value={category} className="selectPanel" onChange={handleChangeCategory} placeholder="CATEGORY">
         {CATEGORIES.map((category) => (
           <option key={uuidv4()} value={category}>

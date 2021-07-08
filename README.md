@@ -1,10 +1,10 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Bookstore App
 
-> One paragraph statement about the project.
+> Small Bookstore built with React & Redux. 
 
-![screenshot](./features/img/app_screenshot.png)
+![screenshot](./src/assets/imgs/app-screenshot.png)
 
 Additional description about the project and its features.
 
