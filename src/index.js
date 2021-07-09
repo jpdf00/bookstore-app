@@ -10,17 +10,17 @@ import rootReducer from './reducers/index';
 const BOOKS = [
   {
     id: uuidv4(),
-    title: 'Book Test 1',
+    title: 'The Hobbit',
     category: 'Action',
   },
   {
     id: uuidv4(),
-    title: 'Book Test 2',
+    title: 'The Silmarillion',
     category: 'Horror',
   },
   {
     id: uuidv4(),
-    title: 'Book Test 3',
+    title: 'Roverandom',
     category: 'Sci-Fi',
   },
 ];

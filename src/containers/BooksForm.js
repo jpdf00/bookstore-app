@@ -3,6 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 import { useDispatch } from 'react-redux';
 import { createBook } from '../actions/index';
 import { CATEGORIES } from '../components/CategoryFilter';
+import '../assets/stylesheets/BooksForm.css';
 
 const BooksForm = () => {
   const [title, setTitle] = useState('');
@@ -32,22 +33,20 @@ const BooksForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label htmlFor="title">
-        Title
-        <input type="text" name="title" value={title} onChange={handleChangeTitle} />
-      </label>
-      <label htmlFor="title">
-        Category
-        <select name="category" value={category} onChange={handleChangeCategory}>
-          {CATEGORIES.map((category) => (
-            <option key={uuidv4()} value={category}>
-              {category}
-            </option>
-          ))}
-        </select>
-      </label>
-      <button type="submit" name="button">Submit</button>
+    <form onSubmit={handleSubmit} className="formContainer">
+      <div className="lineHorizontal" />
+      <h2 className="formTitle">
+        ADD NEW BOOK
+      </h2>
+      <input type="text" name="title" value={title} className="inputPanel" onChange={handleChangeTitle} placeholder="BOOK TITLE" />
+      <select name="category" value={category} className="selectPanel" onChange={handleChangeCategory} placeholder="CATEGORY">
+        {CATEGORIES.map((category) => (
+          <option key={uuidv4()} value={category}>
+            {category}
+          </option>
+        ))}
+      </select>
+      <button type="submit" name="button" className="submitButton">ADD BOOK</button>
     </form>
   );
 };

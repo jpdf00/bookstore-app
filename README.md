@@ -1,65 +1,66 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Bookstore App
 
-> One paragraph statement about the project.
+> Small Bookstore built with React & Redux.
 
-![screenshot](./features/img/app_screenshot.png)
+![screenshot](./src/assets/imgs/app-screenshot.png)
 
-Additional description about the project and its features.
+A Bookstore App where is possible to catalogue books.
+So far is possible to add a new book via the submit Button on the form,
+and to remove a book from the app via the Remove button on the Book.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML, CSS and JavaScript
+- React and Redux
+- Node.js, eslint and stylelint
 
 ## Live Demo
 
-[Bookstore (Coming Soon!)](https://bookstore-app-jpdf.herokuapp.com/)
+[Bookstore](https://bookstore-app-jpdf.herokuapp.com/)
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
 To get a local copy up and running follow these simple example steps.
+
+- On the top of the page there is a green button name "Code"
+- Click on the "Code" button.
+- A Menu will appear click in "Download Zip"
+- Save the zip file on your computer.
+- Extract the contents of the zip you just downloaded into a folder.
 
 ### Prerequisites
 
+- nodeJS.
+- A browser.
+
 ### Setup
 
-### Install
+- Open your comand prompt.
+- Go inside the folder you extracted from the zip file.
+- Type `npm install`.
 
 ### Usage
 
-### Run tests
-
-### Deployment
-
-
+- Open your comand prompt.
+- Go inside the folder you extracted from the zip file.
+- Type `npm start` (this should open a page in your default browser and the page should load).
 
 ## Authors
 
-👤 **Author1**
+👤 **João Paulo Dias França**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/linkedinhandle)
+- GitHub: [@jpdf00](https://github.com/jpdf00)
+- Twitter: [@jpdf00](https://twitter.com/jpdf00)
+- LinkedIn: [João Paulo Dias França](https://www.linkedin.com/in/jpdf00/)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](issues/).
+Feel free to check the [issues page](https://github.com/jpdf00/bookstore-app/issues).
 
 ## Show your support
 
@@ -67,9 +68,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- User Icon courtesy of [Font Awesome](https://fontawesome.com/v5.15/icons/user?style=solid) under the [Font Awesome Pro License](https://fontawesome.com/license)
+
 
 ## 📝 License
 
